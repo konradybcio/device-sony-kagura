@@ -73,10 +73,14 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/system/halium/etc/init/bluetooth-touch-android.conf:system/halium/etc/init/bluetooth-touch-android.conf \
     $(DEVICE_PATH)/rootdir/system/halium/etc/pulse/touch.pa:system/halium/etc/pulse/touch.pa \
     $(DEVICE_PATH)/rootdir/system/halium/usr/share/bluetooth-touch/tone:system/halium/usr/share/bluetooth-touch/tone \
-    $(DEVICE_PATH)/rootdir/system/halium/usr/share/apparmor/hardware/video.d/apparmor-easyprof-ubuntu_android:system/halium/usr/share/apparmor/hardware/video.d/apparmor-easyprof-ubuntu_android
+    $(DEVICE_PATH)/rootdir/system/halium/usr/share/apparmor/hardware/video.d/apparmor-easyprof-ubuntu_android:system/halium/usr/share/apparmor/hardware/video.d/apparmor-easyprof-ubuntu_android \
+    $(DEVICE_PATH)/rootdir/system/halium/usr/share/h2w/switch:system/halium/usr/share/h2w/switch
 
 PRODUCT_PACKAGES += \
-    libubuntu_application_api
+    libubuntu_application_api \
+    libdroidmedia \
+    libui_compat_layer \
+    libsf_compat_layer
 
 # Disable Cyngn additions
 CYNGN_TARGET := false
