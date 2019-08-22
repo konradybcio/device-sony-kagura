@@ -75,9 +75,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libubuntu_application_api \
-    direct_ubuntu_application_sensors_c_api_for_hybris_test \
-    direct_ubuntu_application_sensors_for_hybris_test \
-    direct_ubuntu_application_gps_c_api_for_hybris_test
+    miniafservice
 
 # Disable Cyngn additions
 CYNGN_TARGET := false
