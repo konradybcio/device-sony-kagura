@@ -68,7 +68,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/system/halium/lib/udev/rules.d/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules \
     $(DEVICE_PATH)/rootdir/system/halium/etc/ubuntu-touch-session.d/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf \
-    $(DEVICE_PATH)/rootdir/system/halium/etc/apparmor.d/abstractions/base:system/halium/etc/apparmor.d/abstractions/base
+    $(DEVICE_PATH)/rootdir/system/halium/etc/apparmor.d/abstractions/base:system/halium/etc/apparmor.d/abstractions/base \
+    $(DEVICE_PATH)/rootdir/system/halium/etc/init/bluetooth-touch-android.conf:system/halium/etc/init/bluetooth-touch-android.conf \
+    $(DEVICE_PATH)/rootdir/system/halium/usr/share/bluetooth-touch/tone:system/halium/usr/share/bluetooth-touch/tone
 
 # Disable Cyngn additions
 CYNGN_TARGET := false
