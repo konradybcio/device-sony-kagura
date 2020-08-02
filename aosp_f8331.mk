@@ -21,6 +21,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 PRODUCT_NAME := aosp_f8331
 PRODUCT_DEVICE := kagura
-PRODUCT_MODEL := Xperia XZ (AOSP)
+PRODUCT_MODEL := Xperia XZ
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony

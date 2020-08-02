@@ -23,6 +23,6 @@ $(call inherit-product, device/sony/kagura/aosp_f8331.mk)
 
 PRODUCT_NAME := aosp_f8332
 PRODUCT_DEVICE := kagura
-PRODUCT_MODEL := Xperia XZ Dual (AOSP)
+PRODUCT_MODEL := Xperia XZ Dual
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
