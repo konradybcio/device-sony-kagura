@@ -32,7 +32,7 @@ WIFI_BUS := PCIE
 NXP_CHIP_TYPE := PN547C2
 NXP_CHIP_FW_TYPE := PN547C2
 
-BOARD_KERNEL_CMDLINE += androidboot.hardware=kagura
+BOARD_KERNEL_CMDLINE += androidboot.hardware=kagura console=tty0
 
 # Recovery config
 BOARD_SONY_INIT_FLAGS += -DDEV_BLOCK_FOTA_NUM="45"
@@ -40,8 +40,6 @@ BOARD_SONY_INIT_FLAGS += -DDEV_BLOCK_FOTA_MAJOR="259"
 BOARD_SONY_INIT_FLAGS += -DDEV_BLOCK_FOTA_MINOR="13"
 
 BOARD_KERNEL_CMDLINE += selinux=0
-BOARD_KERNEL_CMDLINE += systempart=/dev/disk/by-partlabel/system
-BOARD_KERNEL_CMDLINE += datapart=/dev/disk/by-partlabel/userdata
 
 # Partition information
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
