@@ -40,6 +40,8 @@ BOARD_SONY_INIT_FLAGS += -DDEV_BLOCK_FOTA_MAJOR="259"
 BOARD_SONY_INIT_FLAGS += -DDEV_BLOCK_FOTA_MINOR="13"
 
 BOARD_KERNEL_CMDLINE += selinux=0
+BOARD_KERNEL_CMDLINE += systempart=/dev/disk/by-partlabel/system
+BOARD_KERNEL_CMDLINE += datapart=/dev/disk/by-partlabel/userdata
 
 # Partition information
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
